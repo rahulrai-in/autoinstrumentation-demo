@@ -1,0 +1,13 @@
+{
+  "profiles": {
+    "counter-store": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "dotnetRunMessages": true,
+      "applicationUrl": "http://localhost:8081"
+    }
+  },
+  "$schema": "https://json.schemastore.org/launchsettings.json"
+}

@@ -1,0 +1,33 @@
+receivers:
+  otlp:
+    protocols:
+      grpc:
+      http:
+
+exporters:
+  logging:
+    logLevel: debug
+  otlp:
+    endpoint: jaeger:4317
+    tls:
+      insecure: true
+  prometheus:
+    endpoint: 0.0.0.0:8889 # This endpoint is scraped by Prometheus
+
+service:
+  pipelines:
+    traces:
+      receivers:
+        - otlp
+      exporters:
+        - otlp
+    metrics:
+      receivers:
+        - otlp
+      exporters:
+        - prometheus
+    logs:
+      receivers:
+        - otlp
+      exporters:
+        - logging

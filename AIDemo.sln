@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33103.184
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{71C1D1DB-BE51-4B93-A810-C15CB1A072CF}"
+	ProjectSection(SolutionItems) = preProject
+		.dockerignore = .dockerignore
+		.env = .env
+		.gitignore = .gitignore
+		docker-compose.yml = docker-compose.yml
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "config", "config", "{00B64E0B-87D0-4E24-8548-61C80C1E9F14}"
+	ProjectSection(SolutionItems) = preProject
+		config\collector.yml = config\collector.yml
+		config\prometheus.yml = config\prometheus.yml
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CounterStore", "CounterStore\CounterStore.csproj", "{85E1B050-8933-47A5-AECD-F9DDF775DECE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MonotonicCounter", "MonotonicCounter\MonotonicCounter.csproj", "{E9A3295A-E68F-46FC-903C-9FD0DDAE6AB1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{85E1B050-8933-47A5-AECD-F9DDF775DECE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85E1B050-8933-47A5-AECD-F9DDF775DECE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85E1B050-8933-47A5-AECD-F9DDF775DECE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85E1B050-8933-47A5-AECD-F9DDF775DECE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9A3295A-E68F-46FC-903C-9FD0DDAE6AB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9A3295A-E68F-46FC-903C-9FD0DDAE6AB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9A3295A-E68F-46FC-903C-9FD0DDAE6AB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9A3295A-E68F-46FC-903C-9FD0DDAE6AB1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {24B4E5F5-A15B-4673-823D-74FE30D4C44E}
+	EndGlobalSection
+EndGlobal
